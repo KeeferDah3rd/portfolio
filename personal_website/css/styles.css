@@ -1,0 +1,1482 @@
+        /*Used for testing the website*/
+
+        * {
+            box-sizing: border-box;
+            /*            border: 2px solid #000000;*/
+        }
+
+        /*Styles all of the p tags to have the font that I want */
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        /*Styles all of the h1 tags to have the font that I want */
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /*Styles all of the h2 tags to have the font that I want */
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        /*Styles all of the h3 tags to have the font that I want */
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        /*Styles all of the ul tags to have the font that I want and to get rid of the bullets */
+
+        ul {
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            padding-left: 0;
+        }
+
+        /*Gets rid of blue color on links*/
+
+        a {
+            color: black;
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+
+        /*Establishes visually feed back when hovering*/
+
+        .mi:hover {
+            color: #E95353;
+            border-bottom: 2px solid #E95353;
+            font-weight: 700;
+        }
+
+        .mi:active {
+            color: #7A1B1B;
+        }
+
+        /*adds styling to process deck*/
+
+        .prdeck {
+            display: grid;
+            margin: auto;
+            max-width: 180px;
+            height: 60px;
+            color: white;
+            background: #E95353;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 110%;
+        }
+
+        /*adds hover state to process deck*/
+
+        .prdeck:hover {
+            background: #7A1B1B;
+            border-bottom: 2px solid #7A1B1B;
+        }
+
+        /*adds click state to process deck*/
+
+        .prdeck:active {
+            background: #000000;
+            font-size: 98%;
+            max-width: 14vh;
+            height: 4.7vh;
+        }
+
+        /*Astablishs a grid that holds all of the content on the page and all the elements affected by the grid */
+
+        .container {
+            display: grid;
+            width: 100vw;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+            z-index: 2;
+        }
+
+        /*Moves the logo to be aligned with the nav text*/
+
+        .logo {
+            align-self: baseline;
+            margin: auto;
+            max-width: 15vh;
+        }
+
+        /*Proporly sizes videos to page*/
+
+        iframe {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        /*Landing page*/
+        /*Aligns the b roll class with the grid and pushes the video down*/
+
+        .video {
+            grid-column: 1/14;
+            grid-row: 1/2;
+            height: auto;
+            padding-top: 50px;
+        }
+
+        /*Aligns the label class with the grid*/
+
+        .pLabel {
+            grid-column: 2/13;
+            grid-row: 2/3;
+            height: auto;
+            text-align: center;
+            padding: 5vh
+        }
+
+        /*Aligns the portfolio blocks with the grid*/
+
+        .portfolio {
+            grid-column: 2/6;
+            grid-row 5/6;
+            height: auto;
+        }
+
+        /* Animates portfolio blocks*/
+        .ol:hover {
+            border: none;
+            transition: all 0.15s ease-in-out;
+            transform: scale(0.95);
+            background-color: #E95353;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 0 5px 10px #575757
+        }
+
+        .ol:active {
+            background-color: #7A1B1B;
+        }
+
+        .oltext {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .oltext2 {
+            text-align: center;
+            margin: 10px;
+            padding-bottom: 30px
+        }
+
+
+
+        /*Aligns the 1st portfolio block with the grid*/
+
+        .p1 {
+            grid-column: 2/7;
+            grid-row: 3/4;
+        }
+
+        /*Aligns the 2nd portfolio block with the grid*/
+
+        .p2 {
+            grid-column: 8/13;
+            grid-row: 3/4;
+        }
+
+        /*Aligns the 3rd portfolio block with the grid*/
+
+        .p3 {
+            grid-column: 2/7;
+            grid-row: 5/6;
+        }
+
+        /*Aligns the 4th portfolio block with the grid*/
+
+        .p4 {
+            grid-column: 8/13;
+            grid-row: 5/6;
+        }
+
+        .p5 {
+            grid-column: 2/7;
+            grid-row: 4/5;
+        }
+
+        .p6 {
+            grid-column: 8/13;
+            grid-row: 4/5;
+        }
+
+        .p7 {
+            grid-column: 2/7;
+            grid-row: 6/7;
+        }
+
+        /*Makes portfolio image resize to the size of the page*/
+
+        .portimg {
+            width: 100%;
+        }
+
+
+        /*About me page*/
+        /*Aligns the personal picture with the grid and pushes down*/
+
+        .personalpic {
+            grid-column: 1/14;
+            grid-row: 1/1;
+            padding-top: 5vh;
+        }
+
+        /*Aligns the discription with the grid and pushes down*/
+
+        .discription {
+            margin-top: -25px;
+            line-height: 29px;
+            grid-column: 1/13;
+            grid-row: 1/1;
+            padding-top: 5vh;
+            padding-left: 25px;
+        }
+
+        /*Contact page*/
+        /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+        .contact {
+            text-align: center;
+            grid-column: 1/14;
+            grid-row: 1/1;
+            line-height: 34px;
+            padding-top: 115px;
+            padding-bottom: 135px;
+        }
+
+        /*Portfolio pages*/
+        /*Centers text*/
+
+        .subhl {
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid #E95353;
+            padding-bottom: 10px;
+        }
+
+        /*Centers text*/
+
+        .porthdmain {
+            text-align: center;
+        }
+
+        /*Centers text*/
+
+        .phlb {
+            text-align: center;
+            padding-top: 1vh;
+            padding-bottom: 2vh;
+        }
+
+        /*Centers text*/
+
+        .phl {
+            text-align: center;
+        }
+
+        /*Adds line height*/
+
+        .portbod {
+            line-height: 24px;
+        }
+
+        /*Genral Project Tags*/
+        /*Aligns the text with the grid and moves content down*/
+
+        .prhl {
+            padding-top: 2vh;
+            grid-column: 1/14;
+            grid-row: 1/2;
+        }
+
+        /*Aligns the vido with the grid*/
+
+        .prvid {
+            grid-column: 1/14;
+            grid-row: 2/3;
+        }
+
+        /*Aligns the image with the grid*/
+        .primg {
+            grid-column: 1/14;
+            grid-row: 2/3;
+        }
+
+        /*Reporter tags*/
+        /*Aligns the text with the grid*/
+
+        .rit1 {
+            padding-top: 70px;
+            grid-column: 1/7;
+            grid-row: 3/4;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .rit2 {
+            grid-column: 2/6;
+            grid-row: 4/5;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .rit3 {
+            padding-top: 70px;
+            grid-column: 1/7;
+            grid-row: 5/6;
+        }
+
+        /*Aligns wireframes with the grid and add padding*/
+
+        .rwf1 {
+            grid-column: 2/4;
+            grid-row: 6/7;
+            padding-right: 10px;
+        }
+
+        /*Aligns wireframes with the grid and add padding*/
+
+        .rwf2 {
+            grid-column: 4/6;
+            grid-row: 6/7;
+            padding-left: 10px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .rit4 {
+            padding-top: 70px;
+            grid-column: 1/7;
+            grid-row: 7/8;
+        }
+
+        /*Aligns comps with the grid and add padding*/
+
+        .rcomp1 {
+            grid-column: 2/4;
+            grid-row: 8/9;
+            padding-right: 10px;
+        }
+
+        /*Aligns comps with the grid and add padding*/
+
+        .rcomp2 {
+            grid-column: 4/6;
+            grid-row: 8/9;
+            padding-left: 10px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .rit5 {
+            padding-top: 70px;
+            grid-column: 1/7;
+            grid-row: 9/10;
+        }
+
+        /*Aligns comps with the grid and add padding*/
+
+        .rcomp3 {
+            grid-column: 2/4;
+            grid-row: 10/11;
+            padding-right: 10px;
+        }
+
+        /*Aligns comps with the grid and add padding*/
+
+        .rcomp4 {
+            grid-column: 4/6;
+            grid-row: 10/11;
+            padding-left: 10px;
+        }
+
+        /*New Media Bumper tags*/
+        /*Aligns the text with the grid*/
+
+        .nit1 {
+            grid-column: 2/8;
+            grid-row: 3/4;
+            line-height: 60px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .nmdprdeck {
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-column: 9/12;
+            grid-row: 3/4;
+            line-height: 60px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .nit2 {
+            grid-column: 2/8;
+            grid-row: 4/5;
+            padding-right: 10px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .nit3 {
+            grid-column: 2/8;
+            grid-row: 5/6;
+        }
+
+        /*Aligns mood board with the grid and adds padding*/
+
+        .nmboard1 {
+            grid-column: 2/7;
+            grid-row: 6/7;
+            padding-right: 10px;
+        }
+
+        /*Aligns mood board with the grid and adds padding*/
+
+        .nmboard2 {
+            grid-column: 8/13;
+            grid-row: 6/7;
+            padding-left: 10px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .nit4 {
+            grid-column: 2/8;
+            grid-row: 7/9;
+        }
+
+        /*Aligns sketches with the grid and adds padding*/
+
+        .nms1 {
+            grid-column: 2/7;
+            grid-row: 9/10;
+            padding-right: 10px;
+        }
+
+        /*Aligns sketches with the grid and adds padding*/
+
+        .nms2 {
+            grid-column: 8/13;
+            grid-row: 9/10;
+            padding-left: 10px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .nit5 {
+            grid-column: 2/8;
+            grid-row: 10/11;
+        }
+
+        /*Aligns the video with the grid*/
+
+        .nmdvid1 {
+            grid-column: 1/14;
+            grid-row: 11/12;
+        }
+
+        /*Aligns the video with the grid*/
+
+        .nmdvid2 {
+            grid-column: 1/14;
+            grid-row: 12/13;
+        }
+
+        /*Aligns the image with the grid*/
+
+        .endscreen {
+            grid-column: 1/14;
+            grid-row: 13/14;
+        }
+
+        /*Standing Man*/
+        /*Aligns the text with the grid*/
+
+        .smit1 {
+            grid-column: 2/8;
+            grid-row: 3/4;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .smit2 {
+            grid-column: 2/8;
+            grid-row: 4/5;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .smit3 {
+            grid-column: 2/4;
+            grid-row: 5/6;
+            line-height: 30px;
+        }
+
+        /*Aligns the text with the grid*/
+
+        .smit4 {
+            grid-column: 5/9;
+            grid-row: 5/6;
+            line-height: 30px;
+        }
+
+        /*Puerto Rico Infographic*/
+        .prit1 {
+            grid-column: 2/8;
+            grid-row: 3/4;
+        }
+
+        .prit2 {
+            grid-column: 2/8;
+            grid-row: 4/5;
+        }
+
+        .prs1 {
+            grid-column: 3/7;
+            grid-row: 5/6;
+        }
+
+        .prs2 {
+            grid-column: 8/12;
+            grid-row: 5/6;
+        }
+
+        .prs3 {
+            grid-column: 4/11;
+            grid-row: 6/7;
+        }
+
+        .prcomp {
+            grid-column: 1/14;
+            grid-row: 7/8;
+        }
+
+        .prsm {
+            grid-column: 1/14;
+            grid-row: 8/9;
+        }
+
+        .prmock {
+            grid-column: 1/14;
+            grid-row: 9/10;
+        }
+
+        /*freelancer*/
+        .flit1 {
+            grid-column: 2/6;
+            grid-row: 3/4;
+        }
+
+        .flvid1 {
+            grid-column: 1/14;
+            grid-row: 4/5;
+        }
+
+        .flgif1 {
+            grid-column: 4/11;
+            grid-row: 5/6;
+        }
+
+        .flgif2 {
+            grid-column: 6/10;
+            grid-row: 6/7;
+        }
+
+        /*Tokyo 2020*/
+        .tit1 {
+            grid-column: 2/8;
+            grid-row: 3/4;
+        }
+
+        .tit2 {
+            grid-column: 2/8;
+            grid-row: 4/5;
+        }
+
+        .tit3 {
+            grid-column: 2/8;
+            grid-row: 5/6;
+        }
+
+        .tboard1 {
+            grid-column: 1/14;
+            grid-row: 6/7;
+        }
+
+        .tboard2 {
+            grid-column: 1/14;
+            grid-row: 7/8;
+        }
+
+        .tit4 {
+            grid-column: 2/8;
+            grid-row: 8/9;
+        }
+
+        .ts1 {
+            grid-column: 2/7;
+            grid-row: 9/10;
+        }
+
+        .ts2 {
+            grid-column: 8/13;
+            grid-row: 9/10;
+        }
+
+        .tit5 {
+            grid-column: 2/8;
+            grid-row: 10/11;
+        }
+
+        .tsf1 {
+            grid-column: 2/7;
+            grid-row: 11/12;
+        }
+
+        .tsf2 {
+            grid-column: 8/13;
+            grid-row: 11/12;
+        }
+
+        .tit6 {
+            grid-column: 2/8;
+            grid-row: 12/13;
+        }
+
+        .tl1 {
+            grid-column: 2/7;
+            grid-row: 13/14;
+        }
+
+        .tl2 {
+            grid-column: 8/13;
+            grid-row: 13/14;
+        }
+
+        .tit7 {
+            grid-column: 2/8;
+            grid-row: 14/15;
+        }
+
+        .tend {
+            grid-column: 1/14;
+            grid-row: 15/16;
+        }
+
+
+        /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
+
+        .flex-nav {
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+
+        /*Add styling and helps with the aligning of the nav and footer elements*/
+
+        .flex-left {
+            display: inline-flex;
+            padding-left: 50px;
+        }
+
+        .flex-right {
+            display: inline-flex;
+            align-content: center;
+            padding: 12px 50px 0 0;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .flex-object {
+            flex: auto;
+            display: block;
+            font-weight: 400;
+            margin: 0 10px 0 10px;
+        }
+
+        /*Moves certain elements in the nav and footer to the right*/
+        /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
+
+        #footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+        }
+
+        /*moves items to the left */
+
+        #footer-icon {
+            display: inline-flex;
+            padding-right: 50px;
+        }
+
+        /*Gives stlying and margins to name */
+
+        .name {
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        /*moves the top right nav to the left away from the edge of the screen*/
+
+        .last {
+            margin-right: 120px;
+        }
+
+        /*Adds a mobile state to the site*/
+
+        @media screen and (max-width: 800px) {
+
+            /*Makes mobile grid*/
+            .container {
+                width: 100vw;
+                grid-template-columns: 1fr 5fr 5fr 1fr;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            .flex-right {
+                display: none;
+                align-content: center;
+                padding: 15px 50px 0 0;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            .menu {
+                display: inline;
+                padding-right: 20px;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            .menutog {
+                padding-top: 15px;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            .menuitem {
+                background-color: #e0e0e0;
+                padding: 5px;
+                z-index: 2;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            .flex-left {
+                display: inline-flex;
+                padding-left: 10px;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            #footer-flex {
+                padding-left: 10px;
+            }
+
+            /*Moves the postions to help with the moblie version*/
+            #footer-icon {
+                padding-right: 10px;
+            }
+
+            /*Used for testing the website*/
+            * {
+                box-sizing: border-box;
+            }
+
+            /*Styles all of the p tags to have the font that I want */
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+
+            /*Styles all of the h1 tags to have the font that I want */
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+
+            /*Styles all of the h2 tags to have the font that I want */
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+            }
+
+            /*Styles all of the h3 tags to have the font that I want */
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+
+            /*Styles all of the ul tags to have the font that I want and to get rid of the bullets */
+            ul {
+                list-style-type: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                padding-left: 0;
+            }
+
+            /*Gets rid of blue color on links*/
+            a {
+                color: black;
+                padding-bottom: 10px;
+                text-decoration: none;
+            }
+
+            /*Establishes visually feed back when hovering*/
+            a:hover {
+                color: #E95353;
+                border-bottom: 2px solid #E95353;
+                font-weight: 700;
+            }
+
+            /*Makes mobile grid*/
+            .container {
+                display: grid;
+                width: 100vw;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr;
+                padding: 0 5px 0 5px;
+            }
+
+            /*Moves the logo to be aligned with the nav text*/
+            .logo {
+                align-self: baseline;
+                margin: auto;
+                max-width: 15vh;
+            }
+
+            /*Proporly sizes videos to page*/
+            iframe {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+
+            /*Landing page*/
+            /*Animates portfolio blocks*/
+            .ol:hover {
+                border: none;
+                transition: all 0.1s ease-in-out;
+                transform: scale(0.9);
+            }
+
+            .video {
+                grid-column: 1/14;
+                grid-row: 1/2;
+                height: auto;
+                padding-top: 50px;
+            }
+
+            /*Aligns the label class with the grid*/
+
+            .pLabel {
+                grid-column: 2/13;
+                grid-row: 2/3;
+                height: auto;
+                text-align: center;
+                padding: 5vh
+            }
+
+            /*Aligns the portfolio blocks with the grid*/
+
+            .portfolio {
+                grid-column: 2/6;
+                grid-row 5/6;
+                height: auto;
+            }
+
+            /* Animates portfolio blocks*/
+            .ol:hover {
+                border: none;
+                transition: all 0.15s ease-in-out;
+                transform: scale(0.95);
+                background-color: #E95353;
+                border: none;
+                border-radius: 30px;
+                color: white;
+                box-shadow: 0 5px 10px #575757
+            }
+
+            .ol:active {
+                background-color: #7A1B1B;
+            }
+
+            .oltext {
+                text-align: center;
+                margin: 10px;
+            }
+
+            .oltext2 {
+                text-align: center;
+                margin: 10px;
+                padding-bottom: 30px
+            }
+
+
+
+            /*Aligns the 1st portfolio block with the grid*/
+
+            .p1 {
+                grid-column: 1/14;
+                grid-row: 3/4;
+            }
+
+            /*Aligns the 2nd portfolio block with the grid*/
+
+            .p2 {
+                grid-column: 1/14;
+                grid-row: 4/5;
+            }
+
+            /*Aligns the 3rd portfolio block with the grid*/
+
+            .p3 {
+                grid-column: 1/14;
+                grid-row: 8/9;
+            }
+
+            /*Aligns the 4th portfolio block with the grid*/
+
+            .p4 {
+                grid-column: 1/14;
+                grid-row: 9/10;
+            }
+
+            .p5 {
+                grid-column: 1/14;
+                grid-row: 6/7;
+            }
+
+            .p6 {
+                grid-column: 1/14;
+                grid-row: 7/8;
+            }
+
+            .p7 {
+                grid-column: 1/14;
+                grid-row: 10/11;
+            }
+
+            /*Makes portfolio image resize to the size of the page*/
+
+            .portimg {
+                width: 100%;
+            }
+
+
+            /*About me page*/
+            /*Aligns the personal picture with the grid and pushes down*/
+
+            .personalpic {
+                grid-column: 1/14;
+                grid-row: 1/2;
+                padding-top: 1vh;
+            }
+
+            /*Aligns the discription with the grid and pushes down*/
+
+            .discription {
+                margin-top: -3vh;
+                line-height: 29px;
+                grid-column: 1/14;
+                grid-row: 2/3;
+                padding-top: 5vh;
+                padding-left: 0;
+            }
+
+            /*Contact page*/
+            /*Aligns content with the grid a well as uses padding to move the content to the center*/
+
+            .contact {
+                text-align: center;
+                grid-column: 1/14;
+                grid-row: 1/1;
+                line-height: 34px;
+                padding-top: 115px;
+                padding-bottom: 135px;
+            }
+
+            /*Portfolio pages*/
+            /*Centers text*/
+
+            .subhl {
+                text-align: left;
+                font-weight: 700;
+                border-bottom: 2px solid #E95353;
+                padding-bottom: 10px;
+            }
+
+            /*Centers text*/
+
+            .porthdmain {
+                text-align: center;
+            }
+
+            /*Centers text*/
+
+            .phlb {
+                text-align: center;
+                padding-top: 1vh;
+                padding-bottom: 2vh;
+            }
+
+            /*Centers text*/
+
+            .phl {
+                text-align: center;
+            }
+
+            /*Adds line height*/
+
+            .portbod {
+                line-height: 24px;
+            }
+
+            /*Genral Project Tags*/
+            /*Aligns the text with the grid and moves content down*/
+
+            .prhl {
+                padding-top: 2vh;
+                grid-column: 1/14;
+                grid-row: 1/2;
+            }
+
+            /*Aligns the vido with the grid*/
+
+            .prvid {
+                grid-column: 1/14;
+                grid-row: 2/3;
+            }
+
+            /*Aligns the image with the grid*/
+            .primg {
+                grid-column: 1/14;
+                grid-row: 2/3;
+            }
+
+            /*Reporter tags*/
+            /*Aligns the text with the grid*/
+
+            .rit1 {
+                padding-top: 70px;
+                grid-column: 1/7;
+                grid-row: 3/4;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .rit2 {
+                grid-column: 2/6;
+                grid-row: 4/5;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .rit3 {
+                padding-top: 70px;
+                grid-column: 1/7;
+                grid-row: 5/6;
+            }
+
+            /*Aligns wireframes with the grid and add padding*/
+
+            .rwf1 {
+                grid-column: 2/4;
+                grid-row: 6/7;
+                padding-right: 10px;
+            }
+
+            /*Aligns wireframes with the grid and add padding*/
+
+            .rwf2 {
+                grid-column: 4/6;
+                grid-row: 6/7;
+                padding-left: 10px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .rit4 {
+                padding-top: 70px;
+                grid-column: 1/7;
+                grid-row: 7/8;
+            }
+
+            /*Aligns comps with the grid and add padding*/
+
+            .rcomp1 {
+                grid-column: 2/4;
+                grid-row: 8/9;
+                padding-right: 10px;
+            }
+
+            /*Aligns comps with the grid and add padding*/
+
+            .rcomp2 {
+                grid-column: 4/6;
+                grid-row: 8/9;
+                padding-left: 10px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .rit5 {
+                padding-top: 70px;
+                grid-column: 1/7;
+                grid-row: 9/10;
+            }
+
+            /*Aligns comps with the grid and add padding*/
+
+            .rcomp3 {
+                grid-column: 2/4;
+                grid-row: 10/11;
+                padding-right: 10px;
+            }
+
+            /*Aligns comps with the grid and add padding*/
+
+            .rcomp4 {
+                grid-column: 4/6;
+                grid-row: 10/11;
+                padding-left: 10px;
+            }
+
+            /*New Media Bumper tags*/
+            /*Aligns the text with the grid*/
+
+            .nit1 {
+                grid-column: 1/12;
+                grid-row: 3/4;
+                line-height: 35px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .nmdprdeck {
+                padding-top: 1vh;
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: auto;
+                grid-column: 1/12;
+                grid-row: 4/5;
+                line-height: 60px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .nit2 {
+                grid-column: 1/12;
+                grid-row: 5/6;
+                padding-right: 10px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .nit3 {
+                grid-column: 1/12;
+                grid-row: 6/7;
+            }
+
+            /*Aligns mood board with the grid and adds padding*/
+
+            .nmboard1 {
+                grid-column: 1/14;
+                grid-row: 6/7;
+                padding-right: 10px;
+            }
+
+            /*Aligns mood board with the grid and adds padding*/
+
+            .nmboard2 {
+                grid-column: 1/14;
+                grid-row: 7/8;
+                padding-left: -10px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .nit4 {
+                grid-column: 1/12;
+                grid-row: 8/9;
+            }
+
+            /*Aligns sketches with the grid and adds padding*/
+
+            .nms1 {
+                grid-column: 1/14;
+                grid-row: 9/10;
+                padding-right: 10px;
+            }
+
+            /*Aligns sketches with the grid and adds padding*/
+
+            .nms2 {
+                grid-column: 1/14;
+                grid-row: 10/11;
+                padding-left: 10px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .nit5 {
+                grid-column: 1/12;
+                grid-row: 11/12;
+            }
+
+            /*Aligns the video with the grid*/
+
+            .nmdvid1 {
+                grid-column: 1/14;
+                grid-row: 12/13;
+            }
+
+            /*Aligns the video with the grid*/
+
+            .nmdvid2 {
+                grid-column: 1/14;
+                grid-row: 13/14;
+            }
+
+            /*Aligns the image with the grid*/
+
+            .endscreen {
+                grid-column: 1/14;
+                grid-row: 14/15;
+            }
+
+            /*Standing Man*/
+            /*Aligns the text with the grid*/
+
+            .smit1 {
+                grid-column: 1/12;
+                grid-row: 3/4;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .smit2 {
+                grid-column: 1/12;
+                grid-row: 4/5;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .smit3 {
+                grid-column: 1/12;
+                grid-row: 5/6;
+                line-height: 30px;
+            }
+
+            /*Aligns the text with the grid*/
+
+            .smit4 {
+                padding-top: -27px;
+                grid-column: 1/12;
+                grid-row: 6/7;
+                line-height: 30px;
+            }
+
+            /*Puerto Rico Infographic*/
+            .prit1 {
+                grid-column: 1/12;
+                grid-row: 3/4;
+            }
+
+            .prit2 {
+                grid-column: 1/12;
+                grid-row: 5/6;
+            }
+
+            .prs1 {
+                grid-column: 1/14;
+                grid-row: 6/7;
+            }
+
+            .prs2 {
+                grid-column: 1/14;
+                grid-row: 7/8;
+            }
+
+            .prs3 {
+                grid-column: 1/14;
+                grid-row: 8/9;
+            }
+
+            .prcomp {
+                grid-column: 1/14;
+                grid-row: 9/10;
+            }
+
+            .prsm {
+                grid-column: 1/14;
+                grid-row: 10/11;
+            }
+
+            .prmock {
+                grid-column: 1/14;
+                grid-row: 11/12;
+            }
+
+            /*freelancer*/
+            .flit1 {
+                grid-column: 1/14;
+                grid-row: 3/4;
+            }
+
+            .flvid1 {
+                grid-column: 1/14;
+                grid-row: 5/6;
+            }
+
+            .flgif1 {
+                grid-column: 1/14;
+                grid-row: 6/7;
+            }
+
+            .flgif2 {
+                grid-column: 1/14;
+                grid-row: 7/8;
+            }
+
+            /*Tokyo 2020*/
+            .tit1 {
+                grid-column: 1/12;
+                grid-row: 3/4;
+            }
+
+            .tit2 {
+                grid-column: 1/12;
+                grid-row: 5/6;
+            }
+
+            .tit3 {
+                grid-column: 1/12;
+                grid-row: 6/7;
+            }
+
+            .tboard1 {
+                grid-column: 1/14;
+                grid-row: 7/8;
+            }
+
+            .tboard2 {
+                grid-column: 1/14;
+                grid-row: 8/9;
+            }
+
+            .tit4 {
+                grid-column: 1/12;
+                grid-row: 9/10;
+            }
+
+            .ts1 {
+                grid-column: 1/14;
+                grid-row: 10/11;
+            }
+
+            .ts2 {
+                grid-column: 1/14;
+                grid-row: 11/12;
+            }
+
+            .tit5 {
+                grid-column: 1/12;
+                grid-row: 12/13;
+            }
+
+            .tsf1 {
+                grid-column: 1/14;
+                grid-row: 13/14;
+            }
+
+            .tsf2 {
+                grid-column: 1/14;
+                grid-row: 14/15;
+            }
+
+            .tit6 {
+                grid-column: 1/12;
+                grid-row: 15/16;
+            }
+
+            .tl1 {
+                grid-column: 1/14;
+                grid-row: 16/17;
+            }
+
+            .tl2 {
+                grid-column: 1/14;
+                grid-row: 17/18;
+            }
+
+            .tit7 {
+                grid-column: 1/12;
+                grid-row: 18/19;
+            }
+
+            .tend {
+                grid-column: 1/14;
+                grid-row: 19/20;
+            }
+
+            /*Aligns nav with the grid and makes it shrink with the window aswell as add some stlying*/
+            .flex-nav {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                padding-top: 20px;
+            }
+
+            /*Add styling and helps with the aligning of the nav and footer elements*/
+            .flex-object {
+                flex: auto;
+                display: block;
+                font-weight: 400;
+                margin: 0 10px 0 10px;
+            }
+
+            /*Aligns footer with the grid and makes it shrink with the window aswell as add some stlying*/
+            .flex-foot {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+
+            /*Stlyes my name and pushes it right from my logo*/
+            .name {
+                margin-right: 10px;
+                font-weight: 700;
+                display: none;
+            }
+        }

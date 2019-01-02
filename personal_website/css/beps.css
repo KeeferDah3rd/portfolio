@@ -1,0 +1,86 @@
+/*Be Playstation*/
+        /*Aligns the text with the grid*/
+
+        .psit1 {
+            padding-top: 70px;
+            grid-column: 2/4;
+            grid-row: 3/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Aligns the text with the grid*/
+
+        .psit2 {
+            padding-top: 70px;
+            grid-column: 4/6;
+            grid-row: 3/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Aligns the text with the grid*/
+
+        .psit3 {
+            padding-top: 70px;
+            grid-column: 4/6;
+            grid-row: 4/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Aligns sketches with the grid and adds padding*/
+
+        .pss1 {
+            padding-top: 70px;
+            padding-right: 10px;
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+        /*Aligns sketches with the grid and adds padding*/
+
+        .pss2 {
+            padding-right: 10px;
+            grid-column: 2/4;
+            grid-row: 5/6;
+        }
+        /*Aligns sketches with the grid and adds padding*/
+
+        .pss3 {
+            padding-left: 10px;
+            grid-column: 4/6;
+            grid-row: 5/6;
+        }
+        /*Aligns the text with the grid*/
+
+        .psit4 {
+            grid-column: 2/4;
+            grid-row: 6/7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Aligns the image with the grid*/
+
+        .psicon {
+            padding-top: 70px;
+            grid-column: 4/6;
+            grid-row: 6/7;
+        }
+        /*Aligns the button with the grid*/
+
+        .button {
+            padding-top: 70px;
+            grid-column: 2/4;
+            grid-row: 7/8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*Aligns the image with the grid*/
+
+        .merch {
+            padding-top: 70px;
+            grid-column: 4/6;
+            grid-row: 7/8;
+        }
